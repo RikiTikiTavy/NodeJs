@@ -1,0 +1,15 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV=�Content-TYPE� CONTENT=�text/html; charset=utf-8�>
+<link rel="stylesheet" href="main.css">
+</HEAD>
+<BODY>
+<table width="100%" border="2" cellspacing="0" cellpadding="1" align="middle">
+<tr>
+<p class="scrolltext">Бегущая строка </p>
+<marquee style = "color: rgb(50,50,50)" scrollamount = 30> <p class="scrolltext">CSS</p></marquee>
+</tr>
+</table>
+
+</BODY>
+</HTML>
