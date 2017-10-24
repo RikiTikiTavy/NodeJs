@@ -1,7 +1,10 @@
-
 var express = require('express');
 var app = express();
-    app.use("/",
-        express.static(__dirname)
-    );
-app.listen(8181);
+var port = 8181;
+app.use(express.static(__dirname+'/static'));
+app.get('/', function (req, res) {
+  res.sendFile(__dirname+"/index.html");
+});
+app.listen(port, function (){
+  console.log('Server started '+port);
+});
