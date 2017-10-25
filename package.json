@@ -5,6 +5,7 @@
   "dependencies": {
     "express": "^4.16.2"
   },
-  "main": "app.js",
-"scripts" : { "start" : "node app.js" }
+  "main": "server.js",
+"author": "Roman",
+  "license": "ISC"
 }
