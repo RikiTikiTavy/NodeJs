@@ -1,0 +1,11 @@
+<HTML>
+<head>
+
+</head>
+<BODY>
+<a class="center-time" ></a>
+<%= time %>
+
+</BODY>
+</HTML>
+

@@ -13,7 +13,7 @@ app.get('/', function(req, res) {
     var dat = date.create();
    
     res.render('index', {
-        time: new Date()
+        time: format
     });
 });
 
