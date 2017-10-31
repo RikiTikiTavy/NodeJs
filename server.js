@@ -5,6 +5,10 @@ var proxy = require('express-http-proxy');
 var date = require('node-datetime');
 var moment = require('moment');
 
+app.use(express.static(__dirname + '/node_modules/bootstrap/dist/js'));
+app.use( express.static(__dirname + '/node_modules/jquery/dist'));
+app.use(express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+
 app.use(express.static(__dirname+'/static'));
 
 moment.locale('ru');
