@@ -11,9 +11,9 @@ moment.locale('ru');
 app.set('view engine', 'ejs');
 app.get('/', function(req, res) {
     var dat = date.create();
-   
+    var format = moment().format('DD MMMM YYYY');
     res.render('index', {
-        time: new Date()
+        time: format
     });
 });
 
