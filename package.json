@@ -2,6 +2,11 @@
   "name": "npm",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "npm run-script clean && npm run-script build && node server.js",
+    "clean": "rm -rf dist/*",
+    "build": "mkdir -p dist && cp -r src/* dist"
+  },
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.16.2",

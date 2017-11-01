@@ -5,18 +5,17 @@ var proxy = require('express-http-proxy');
 var date = require('node-datetime');
 var moment = require('moment');
 
-app.use('/js',  express.static(__dirname + '/node_modules/'));
-app.use('/js', express.static(__dirname + '/node_modules/'));
-app.use( express.static(__dirname + '/node_modules/bootstrap/'));
+app.use(express.static(__dirname + '/node_modules/jquery/dist'));
+app.use( express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 
-app.use(express.static(__dirname+'/styles'));
+app.use(express.static(__dirname+'/src'));
 
 moment.locale('ru');
 app.set('view engine', 'ejs');
 app.get('/', function(req, res) {
     var dat = date.create();
     var format = moment().format('DD MMMM YYYY');
-    res.render('index', {
+    res.render(__dirname+'/src/views/index', {
         time: format
     });
 });

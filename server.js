@@ -8,14 +8,14 @@ var moment = require('moment');
 app.use(express.static(__dirname + '/node_modules/jquery/dist'));
 app.use( express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 
-app.use(express.static(__dirname+'/styles'));
+app.use(express.static(__dirname+'/dist'));
 
 moment.locale('ru');
 app.set('view engine', 'ejs');
 app.get('/', function(req, res) {
     var dat = date.create();
     var format = moment().format('DD MMMM YYYY');
-    res.render('index', {
+    res.render(__dirname+'/dist/views/index', {
         time: format
     });
 });
