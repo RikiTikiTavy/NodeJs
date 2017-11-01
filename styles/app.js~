@@ -1,0 +1,7 @@
+
+
+$(document).toggle(
+	function(){
+        $('button').toggleClass('wellStyle alert-warning')
+	}
+);

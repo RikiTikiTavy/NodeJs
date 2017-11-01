@@ -1,12 +1,16 @@
 <HTML>
 <head>
-<link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="bootstrap.min.css">
+<link href="bootstrap.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="app.js"></script>
 
 </head>
 <BODY>
-<div class="well">
+<div class="well" id="wellStyle">
 <%= time %>
+<br>
+<button class="btn btn-primary" id="button">Change Style</button>
 </div>
 
 </BODY>

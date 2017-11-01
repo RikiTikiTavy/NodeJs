@@ -1,0 +1,14 @@
+var sw=0; 
+alert(';p;');
+$(function() {
+    $('#mybtn').on('click', function (e) {
+        if(sw==0){
+            $("#mywell").attr('class', 'alert alert-warning');
+            sw=1;
+        }
+        else{
+            $("#mywell").attr('class', 'well well-style');
+            sw=0;
+        }
+    });
+});

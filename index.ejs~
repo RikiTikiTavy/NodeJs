@@ -7,8 +7,11 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <BODY>
-<div class="well">
+
+<div class="well well-sm" id="mywell">
 <%= time %>
+<br>
+<button class="btn btn-primary" id="mybtn">Switch</button>
 </div>
 
 </BODY>
