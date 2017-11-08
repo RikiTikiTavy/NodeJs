@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm run-script clean && npm run-script build && node server.js",
+    "prestart": "npm run-script clean && npm run-script build",
     "clean": "rm -rf dist/*",
-    "build": "mkdir -p dist && cp -r src/* dist"
+    "build": "mkdir -p dist && cp -r src/app.js dist && cp -r src/main.css dist"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
